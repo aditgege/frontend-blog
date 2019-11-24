@@ -1,0 +1,6 @@
+query Menus {
+  menus {
+    id
+    name
+  }
+}
