@@ -21,6 +21,9 @@ import ListPost from '~/components/ListPost'
 export default {
   components: {
     ListPost
+  },
+  created () {
+    console.log('test' + process.env.BACKEND_URL)
   }
 }
 </script>
