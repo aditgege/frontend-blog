@@ -1,8 +1,9 @@
-query Articles($id: ID!) {
-  article(id: $id){
+query Articles {
+  articles {
     id
     title
     content
     published_at
+    timeto_read
   }
 }

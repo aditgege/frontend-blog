@@ -17,7 +17,7 @@
 </template>
 <script>
 import moment from 'moment'
-import articlesQuery from '~/apollo/queries/articles/article'
+import articlesQuery from '~/apollo/queries/articles/articles'
 export default {
   data: () => ({
     articles: []

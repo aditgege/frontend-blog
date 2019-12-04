@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="mx-auto max-w-3xl px-6">
-      <div class="py-4" v-for="article in articles" :key="article.index">
+      <div class="py-4">
         <h2 class="text-3xl sm:text-4xl leading-tight font-display mb-1 sm:mb-3 text-left">
         <a class="text-black">{{article.title }}</a>
         </h2>
@@ -16,10 +16,10 @@
 </template>
 <script>
 import moment from 'moment'
-import articlesQuery from '~/apollo/queries/articles/article'
+import articleQuery from '~/apollo/queries/articles/article'
 export default {
   data: () => ({
-    articles: []
+    article: []
   }),
   methods: {
     formatedDate (date) {
@@ -30,9 +30,12 @@ export default {
     }
   },
   apollo: {
-    articles: {
+    article: {
       prefetch: true,
-      query: articlesQuery
+      query: articleQuery,
+      variables () {
+        return { id: parseInt(this.$route.params.id) }
+      }
     }
   }
 }
