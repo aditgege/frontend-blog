@@ -7,7 +7,7 @@
         </h2>
         <p class="font-content text-left leading-normal text-gray-700 lg:text-lg sm:text-sm px-2 sm:px-4 md:px-10" v-html="$md.render(article.content)" ></p>
         </nuxt-link>
-        <div class="text-right mt-5 sm:text-center">
+        <div class="md:text-right mt-5 sm:text-center">
             <small class="text-gray-700 text-md ">{{ formatedDate(article.published_at)}} &nbsp;• </small>
         </div>
       </div>
