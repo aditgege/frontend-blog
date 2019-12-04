@@ -5,9 +5,9 @@
         <header class="mb-8">
           <nuxt-link :to="'/post/'+article.id">
             <h2 class="text-3xl sm:text-4xl leading-tight font-display mb-1 sm:mb-2 text-center">
-            <a class="text-black font-bold">{{article.title }}</a>
+            <a class="text-black">{{article.title }}</a>
           </h2>
-            <p class="font-content leading-normal text-gray-700 lg:text-lg sm:text-sm px-2 sm:px-4 md:px-10" v-html="excerpt(article.content, 150, ' ...')"></p>
+            <p class="font-content leading-normal text-black text-3xl md:text-md sm:text-sm px-2 sm:px-4 md:px-10" v-html="excerpt(article.content, 150, ' ...')"></p>
           </nuxt-link>
             <small class="text-left text-gray-700 text-md px-2 pt-3 sm:px-4 md:px-10">{{ formatedDate(article.published_at)}} &nbsp;•&nbsp;{{ formatTimeToRead(article.timeto_read)}} </small>
         </header>
