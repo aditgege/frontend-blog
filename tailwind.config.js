@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'display': ['Calistoga'],
-      'content': ['Alatsi']
+      'content': ['Neuton']
     }
   },
   variants: {},

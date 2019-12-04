@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-3xl px-6">
       <div class="py-4" v-for="article in articles" :key="article.index">
         <h2 class="text-3xl sm:text-4xl leading-tight font-display mb-1 sm:mb-3 text-left">
-        <a class="text-black font-bold">{{article.title }}</a>
+        <a class="text-black">{{article.title }}</a>
         </h2>
         <p class="font-content text-left leading-normal text-gray-700 lg:text-lg sm:text-sm px-2 sm:px-4 md:px-10" v-html="$md.render(article.content)" ></p>
         </nuxt-link>
