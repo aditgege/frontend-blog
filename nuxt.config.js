@@ -45,8 +45,15 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
   apollo: {
     clientConfigs: {
       default: {
