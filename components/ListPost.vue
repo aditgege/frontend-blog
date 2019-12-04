@@ -4,7 +4,7 @@
       <div class="py-8 sm:py-20 border-b border-gray-300" v-for="article in articles" :key="article.index">
         <header class="mb-8">
           <nuxt-link :to="'/post/'+article.id">
-            <h2 class="text-3xl sm:text-4xl leading-tight font-display mb-1 sm:mb-2 text-center">
+            <h2 class="text-3xl sm:text-2xl leading-tight font-display mb-1 sm:mb-2 text-center">
             <a class="text-black">{{article.title }}</a>
           </h2>
             <p class="font-content leading-normal text-gray-700 lg:text-lg sm:text-sm px-2 sm:px-4 md:px-10" v-html="excerpt(article.content, 150, ' ...')"></p>
