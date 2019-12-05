@@ -12,7 +12,7 @@ export default {
     Post
   },
   created () {
-    console.log('test' + process.env.BACKEND_URL)
+    // console.log('test' + process.env.BACKEND_URL)
   }
 }
 </script>
