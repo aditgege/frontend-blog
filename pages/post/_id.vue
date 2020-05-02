@@ -10,12 +10,6 @@ import Post from '~/components/Post'
 export default {
   components: {
     Post
-<<<<<<< HEAD
-=======
-  },
-  created () {
-    // console.log('test' + process.env.BACKEND_URL)
->>>>>>> 686da4b1ce74c1ba7cb089deb7539aef452c4471
   }
 }
 </script>

@@ -25,15 +25,8 @@ import ListPost from "~/components/ListPost";
 import ModePicker from "~/components/ModePicker";
 export default {
   components: {
-<<<<<<< HEAD
     ListPost,
     ModePicker
-=======
-    ListPost
-  },
-  created () {
-    // console.log('test' + process.env.BACKEND_URL)
->>>>>>> 686da4b1ce74c1ba7cb089deb7539aef452c4471
   }
 };
 </script>

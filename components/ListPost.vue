@@ -8,7 +8,6 @@
       >
         <div class="mb-8">
           <nuxt-link :to="'/post/'+article.id">
-<<<<<<< HEAD
             <div class="">
               <h2 class="text-3xl sm:text-4xl leading-tight font-display mb-3 sm:mb-4 text-center">
                 <a class="text-black dark:text-white">{{ article.title }}</a>
@@ -18,12 +17,6 @@
                 class="font-content leading-normal text-gray-700 lg:text-lg sm:text-sm px-2 sm:px-4 md:px-10"
               />
             </div>
-=======
-            <h3 class="text-3xl sm:text-2xl leading-tight font-display mb-1 sm:mb-2 text-center">
-            <a class="text-black">{{article.title }}</a>
-          </h3>
-            <p class="font-content leading-normal text-gray-700 lg:text-lg sm:text-sm px-2 sm:px-4 md:px-10" v-html="excerpt(article.content, 150, ' ...')"></p>
->>>>>>> 686da4b1ce74c1ba7cb089deb7539aef452c4471
           </nuxt-link>
         </div>
         <small
