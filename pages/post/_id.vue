@@ -10,9 +10,6 @@ import Post from '~/components/Post'
 export default {
   components: {
     Post
-  },
-  created () {
-    console.log('test' + process.env.BACKEND_URL)
   }
 }
 </script>
