@@ -4,6 +4,9 @@
   "description": "My sensational Nuxt.js project",
   "author": "aditgege",
   "private": true,
+  "engines": {
+    "node": "^16"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
