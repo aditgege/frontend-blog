@@ -32,19 +32,19 @@ export default {
   data: () => ({
     // articles: []
   }),
-  async asyncData({ $content }) {
-    const articles = await $content("/admin/collections/blog").fetch();
-    console.log(articles)
-    return {
-      articles
-    }
-  },
+  // async asyncData({ $content }) {
+  //   const articles = await $content("/admin/collections/blog").fetch();
+  //   console.log(articles)
+  //   return {
+  //     articles
+  //   }
+  // },
   mounted () {
     this.getArticles()
   },
   methods: {
     async getArticles () {
-      const articles = this.$content("/admin/collections/blog").fetch()
+      const articles = await this.$content("blog").fetch()
       console.log(articles)
       return {
         articles
