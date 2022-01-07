@@ -1,6 +1,7 @@
 require('dotenv').config()
 export default {
-  mode: 'spa',
+  // mode: 'spa',
+  ssr: false,
   /*
   ** Headers of the page
   */
@@ -39,16 +40,13 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/dotenv',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/svg',
+    // '@nuxtjs/svg',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/markdownit',
     '@nuxt/content'
   ],
   generate: {

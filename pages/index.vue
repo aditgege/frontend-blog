@@ -2,7 +2,7 @@
   <div>
     <main>
       <div>
-        <ModePicker />
+        <!-- <ModePicker /> -->
       </div>
       <header>
         <div
@@ -22,11 +22,10 @@
 
 <script>
 import ListPost from "~/components/ListPost";
-import ModePicker from "~/components/ModePicker";
+// import ModePicker from "~/components/ModePicker";
 export default {
   components: {
     ListPost,
-    ModePicker
   }
 };
 </script>
