@@ -48,21 +48,17 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/apollo',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxt/content'
   ],
+  content: {
+
+  },
   markdownit: {
     preset: 'default',
     linkify: true,
     breaks: true,
     injected: true
-  },
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.BACKEND_URL || 'http://localhost:1337/graphql'
-      }
-    }
   },
   /*
   ** Build configuration

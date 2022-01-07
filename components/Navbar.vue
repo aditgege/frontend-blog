@@ -6,17 +6,10 @@
   </ul>
 </template>
 <script>
-import menuQuery from '~/apollo/queries/menu/menus'
 export default {
   name: 'Navbar',
   data: () => ({
     menus: []
   }),
-  apollo: {
-    menus: {
-      prefetch: true,
-      query: menuQuery
-    }
-  }
 }
 </script>

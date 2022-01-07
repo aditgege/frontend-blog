@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="mx-auto max-w-3xl px-6">
-      <div
+      <!-- <div
         v-for="article in articles"
         :key="article.index"
         class="border-b border-gray-300 note my-10 shadow-md "
@@ -22,18 +22,40 @@
         <small
           class="text-left text-gray-700 text-md px-2 pt-3 sm:px-4 md:px-10"
         >{{ formatedDate(article.published_at) }} &nbsp;•&nbsp;{{ formatTimeToRead(article.timeto_read) }}</small>
-      </div>
+      </div> -->
     </div>
   </article>
 </template>
 <script>
 import moment from "moment";
-import articlesQuery from "~/apollo/queries/articles/articles";
 export default {
   data: () => ({
-    articles: []
+    // articles: []
   }),
+  async asyncData({ $content }) {
+    const articles = await $content("/admin/collections/blog").fetch();
+    console.log(articles)
+    return {
+      articles
+    }
+  },
+  mounted () {
+    this.getArticles()
+  },
   methods: {
+    async getArticles () {
+      const articles = this.$content("/admin/collections/blog").fetch()
+      console.log(articles)
+      return {
+        articles
+      }
+      // .then(res => {
+      //   console.log(res)
+      // })
+      // .catch((err) => {
+      //   console.log(err)
+      // })
+    },
     excerpt(post, length, clamp) {
       if (post.excerpt) {
         return post.excerpt;
@@ -52,12 +74,6 @@ export default {
       return time + " min read";
     }
   },
-  apollo: {
-    articles: {
-      prefetch: true,
-      query: articlesQuery
-    }
-  }
 };
 </script>
 <style>

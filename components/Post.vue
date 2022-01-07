@@ -19,7 +19,6 @@
 </template>
 <script>
 import moment from 'moment'
-import articleQuery from '~/apollo/queries/articles/article'
 export default {
   data: () => ({
     article: []
@@ -35,14 +34,5 @@ export default {
       return string.toString()
     }
   },
-  apollo: {
-    article: {
-      prefetch: true,
-      query: articleQuery,
-      variables () {
-        return { id: this.$route.params.id }
-      }
-    }
-  }
 }
 </script>
