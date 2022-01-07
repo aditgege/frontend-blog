@@ -38,10 +38,14 @@ export default {
   //     article,
   //   };
   // },
+  mounted(){
+    this.getArticle()
+  },
   methods: {
 
     async getArticle () {
       const article = await this.$content('blog', this.$route.params.slug).fetch();
+      console.log(article)
 
       this.article = article
     },
@@ -57,3 +61,18 @@ export default {
   },
 }
 </script>
+<style>
+  p {
+    @apply font-content text-left leading-normal text-gray-700 text-sm px-2 px-4
+  }
+  @media screen(md) {
+    p {
+      @apply px-10
+    }
+  }
+  @media screen(lg) {
+    p {
+      @apply  text-lg
+    }
+  }
+</style>
