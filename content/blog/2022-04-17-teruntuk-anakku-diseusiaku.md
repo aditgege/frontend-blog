@@ -1,5 +1,5 @@
 ---
-title: Teruntuk anakku, diseusiaku
+title: Teruntuk anakku, di seusiaku
 date: 2022-04-17T09:42:19.434Z
 minread: 2
 ---
