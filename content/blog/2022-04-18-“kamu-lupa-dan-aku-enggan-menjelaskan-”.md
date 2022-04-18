@@ -1,5 +1,5 @@
 ---
-title: “Kamu lupa, dan aku enggan menjelaskan.”
+title: '" Tak perlu "'
 date: 2022-04-18T17:00:48.255Z
 minread: 2
 ---
