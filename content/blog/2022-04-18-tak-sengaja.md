@@ -7,6 +7,4 @@ Aku yang terbiasa dengan ketiadaan\
 Dibuat tak berdaya,\
 Oleh sesuatu yang tak sengaja.
 
-
-
 > "Mengapa harus berperang, jika yang tak sengaja justru lebih menyakitkan?" (Acar nasi goreng yang terbuang)
