@@ -1,5 +1,5 @@
 ---
-title: " Tak berdaya"
+title: '"Tak berdaya"'
 date: 2022-04-18T16:28:30.736Z
 minread: 2
 ---
