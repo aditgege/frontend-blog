@@ -1,7 +1,7 @@
 ---
 title: '"Teruntuk anakku diseusiaku #3"'
 date: 2022-05-14T15:55:31.428Z
-minread: 2
+minread: 3
 ---
 Bagaimana keadaanmu? Kuharap di masamu kelak, kamu tak harus merasakan betapa canggungnya berbincang dengan seorang ayah.
 
